@@ -32,4 +32,4 @@ http://178.239.178.23/task_manager/
 
 [I recommend ripple plugin for chrome](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc)     
 
-You can find a generate apk for android under the folder "generated apk".
+You can find a generate apk for android under the folder "mobile/generated apk".
