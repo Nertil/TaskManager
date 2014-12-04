@@ -1,4 +1,4 @@
-DESCRIPTION:
+DESCRIPTION
 ============
 This is a simple demo app to show communication between sencha touch and REST web services realized in Java.
 
