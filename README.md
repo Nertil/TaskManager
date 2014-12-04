@@ -13,7 +13,7 @@ LICENCE
 TOOLS AND FRAMEWORKS
 ====================
 
-Operating system: windows 8.1
+Operating system: windows 8.1    
 ST2 version: [2.4.0](http://www.sencha.com/products/touch/)    
 Sencha Cmd: [v5.0.3.324](http://www.sencha.com/products/sencha-cmd/)    
 Sencha Architect: [v3.1.0](http://www.sencha.com/products/architect/)    
