@@ -14,7 +14,7 @@ TOOLS AND FRAMEWORKS
 ====================
 
 Operating system: windows 8.1    
-ST2 version: [2.4.0](http://www.sencha.com/products/touch/)    
+ST2 version: [v2.4.0](http://www.sencha.com/products/touch/)    
 Sencha Cmd: [v5.0.3.324](http://www.sencha.com/products/sencha-cmd/)    
 Sencha Architect: [v3.1.0](http://www.sencha.com/products/architect/)    
 Netbeans: [v8.0.1](https://netbeans.org/)    
