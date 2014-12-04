@@ -26,10 +26,15 @@ OTHER COMPONENTS
 =================
 [Component for the localization writen by Mitchell Simoens](https://github.com/mitchellsimoens/Ux.locale.Manager)    
 
-Live demo
+LIVE DEMO
 =========
 http://178.239.178.23/task_manager/
 
 [I recommend ripple plugin for chrome](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc)     
 
 You can find a generate apk for android under the folder "mobile/generated apk".
+
+TIPS
+====
+
+After you initialized cordova you have to copy manyaly the the files from "mobile/app/locales" into "mobile/cordova/www/app/locales" and also the resource dir because there is a [bug](http://www.sencha.com/forum/showthread.php?294230) in sencha cmd that dont copy the resources.
