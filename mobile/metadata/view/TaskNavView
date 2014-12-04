@@ -1,0 +1,63 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defaultBackButtonText": null,
+        "designer|userAlias": "tasknavview",
+        "designer|userClassName": "TaskNavView",
+        "itemId": "mainView",
+        "locales": [
+            "{",
+            "defaultBackButtonText: 'buttons.back'",
+            "}"
+        ],
+        "ui": null
+    },
+    "name": "MainView1",
+    "configAlternates": {
+        "locales": "object"
+    },
+    "designerId": "e770d5c9-9dda-4cbb-9da3-76c2e4939b76",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "locales",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "hidden": true,
+                "locales": [
+                    "{",
+                    "title: 'panels.task.titles.tasklist'",
+                    "}"
+                ]
+            },
+            "name": "tasklist1",
+            "configAlternates": {
+                "locales": "object"
+            },
+            "designerId": "62b90ec9-fb17-45de-8c50-230300cdfc1f",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "locales",
+                    "type": "string"
+                }
+            ],
+            "masterInstanceId": "1f2aa174-7fca-4eb5-9083-a68ef92560e7"
+        }
+    ]
+}

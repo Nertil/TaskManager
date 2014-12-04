@@ -1,0 +1,73 @@
+{
+   "builds": {
+      "web": {
+         "default": true
+      },
+      "native": {
+         "packager": "cordova",
+         "cordova": {
+            "config": {
+               "id": "com.domain.TaskManager",
+               "name": "TaskManager",
+               "platforms": "android"
+            }
+         }
+      }
+   },
+   "name": "TaskManager",
+   "indexHtmlPath": "index.html",
+   "url": null,
+   "js": [
+      {
+         "path": "touch/sencha-touch.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "bootstrap.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "app.js",
+         "bundle": true,
+         "update": "delta"
+      }
+   ],
+   "css": [
+      {
+         "path": "resources/style.css"
+      },
+      {
+         "update": "delta",
+         "platform": [
+            "phone",
+            "tablet",
+            "desktop"
+         ],
+         "theme": "Default",
+         "path": "resources/css/sencha-touch-45ee8ca2-bec4-4d0b-a97c-1cd3943ab829.css"
+      }
+   ],
+   "appCache": {
+      "cache": [
+         "index.html"
+      ],
+      "network": [
+         "*"
+      ],
+      "fallback": []
+   },
+   "resources": [
+      "resources/images",
+      "resources/icons",
+      "resources/startup",
+      "app/locales",
+      "resources/style.css",
+      "resources/flags"
+   ],
+   "ignore": [
+      ".svn$"
+   ],
+   "archivePath": "archive",
+   "requires": [],
+   "id": "418f3d92-98fb-430b-b291-299639c0e5f1"
+}

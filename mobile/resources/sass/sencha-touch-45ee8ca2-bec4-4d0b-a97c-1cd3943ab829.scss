@@ -1,0 +1,19 @@
+
+
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+
+@include icon-font('CustomIcons', inline-font-files(
+'font-awesome/fonts/fontawesome-webfont.woff', woff,
+'font-awesome/fonts/fontawesome-webfont.ttf', truetype,
+'font-awesome/fonts/fontawesome-webfont.svg', svg,
+'font-awesome/fonts/fontawesome-webfont.eot', eot
+));
+
+@include icon("fa-lock", '\f023', "CustomIcons");
+@include icon("fa-play", '\f04b', "CustomIcons");
+@include icon("fa-line-chart", '\f201', "CustomIcons");
+@include icon("fa-frown-o", '\f119', "CustomIcons");
+@include icon("fa-smile-o", '\f118', "CustomIcons");
+@include icon("fa-check", '\f046', "CustomIcons");

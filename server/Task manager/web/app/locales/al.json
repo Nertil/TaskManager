@@ -1,0 +1,93 @@
+{
+    "dayNames": ["E diel", "E hënë", "E martë", "E mërkurë", "E enjte", "E premte", "E shtunë"],
+    "monthNames": ["Janar", "Shkurt", "Mars",  "Prill", "Maj", "Qershor", "Korik", "Gusht", "Shtator", "Tetor", "Nëntor", "Dhjetor"],
+    "months": {
+        "1": "Janar",
+        "2": "Shkurt",
+        "3": "Mars",
+        "4": "Prill",
+        "5": "Maj",
+        "6": "Qershor",
+        "7": "Korik",
+        "8": "Gusht",
+        "9": "Shtator",
+        "10": "Tetor",
+        "11": "Nëntor",
+        "12": "Dhjetor"
+    },
+    "buttons":{
+        "save": "Shpëto",
+        "back": "Mbrapa",
+        "done": "E bëra",        
+        "ok": "Ok",
+        "cancel": "Anullo",
+        "new": "E re",
+        "edit": "Redakto",
+        "delete": "Fshi",
+        "search": "Kërko...",
+        "refresh": "Fresko",
+        "open": "Hap",
+        "exit": "Dil",
+        "yes": "Po",
+        "no": "Jo"
+    },
+    "defaultDateFormat": "d/m/Y",
+    "loadingText": "Ngarkim...",
+    "emptyText": "Asjnë artikull në dispozicion.",
+    "date":{
+        "day": "Dita",
+        "month": "Muaji",
+        "year": "Viti"
+    },
+    "apptitle": "MENAXHERI I DETYRAVE",
+    "languages":{
+        "al":"Shqip",
+        "en": "Anglist",
+        "it": "Italisht"
+    },
+    "panels":{
+        "welcome":{
+            "welcome_label": "Mirësevini në \"MENAXHERI I DETYRAVE\". <br>Ky  është një demo që ve në dukje komunikimin me serverin nepermjet  webservice REST",
+            "login": "Hyrje",
+            "register": "Regjistrim"
+        },
+        "login":{
+            "title": "Hyrje",
+            "b_login": "Hyrë",
+            "username": "Përdoruesi",
+            "password": "Fjalëkalimi",
+            "error_label": "Refuzohet hyrja! Përdoruesi ose fjalëkalimi i pa saktë"
+        },
+        "register":{
+            "title": "Registrim",
+            "b_register": "Registrohu",
+            "username": "Përdoruesi",
+            "password": "Fjalëkalimi",                        
+            "name": "Emër",
+            "email": "Email",
+            "error_label": "Eksiston një perdorues me këtë email."
+        },
+        "task":{
+            "titles":{
+                "new": "Detyrë e re",
+                "edit": "Redakto detyrën",
+                "tasklist": "Detyrat e mia"
+            },
+            "description": "Përshkrim",
+            "priority": "Përparësi",
+            "priorities":{
+                "low": "E ulet",
+                "normal": "normale",
+                "high": "E larte"
+            },
+            "duedate": "Data e skadencës",
+            "completed": "E përfunduar"
+        },
+        "fieldset_istruction": "* fushë e domosdosme"
+    },
+    "messages":{
+        "attention": "Kujdes",
+        "deletion_confirm": "A je i sigurt për të fshishë këtë detyrë?",
+        "user_exist": "Në database ka një përdorues me kete emër përdoruesi. Pro një përdorues tjeter."
+    }
+}

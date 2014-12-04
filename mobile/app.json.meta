@@ -1,0 +1,1 @@
+{"_comment":"Please don't edit. This is Architect data.","name":"TaskManager","resources":["resources/style.css"],"requires":[],"classpath":null,"css":[{"path":"resources/style.css"},{"update":"delta","platform":["phone","tablet","desktop"],"theme":"Default","path":"resources/css/sencha-touch-45ee8ca2-bec4-4d0b-a97c-1cd3943ab829.css"}],"js":[]}

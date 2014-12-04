@@ -1,0 +1,20 @@
+{
+    "type": "Ext.Label",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "message-red"
+        ],
+        "designer|userAlias": "messagelabel",
+        "designer|userClassName": "MessageLabel",
+        "hidden": false,
+        "html": "message label",
+        "itemId": "messageLabel"
+    },
+    "name": "MyLabel",
+    "designerId": "20404043-3d48-48f1-9a7c-3da2216e3a1c"
+}

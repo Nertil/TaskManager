@@ -1,0 +1,62 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defaultBackButtonText": null,
+        "designer|userAlias": "loginnavview",
+        "designer|userClassName": "LoginNavView",
+        "itemId": "mainView",
+        "locales": [
+            "{",
+            "defaultBackButtonText: 'buttons.back'",
+            "}"
+        ],
+        "ui": null
+    },
+    "configAlternates": {
+        "locales": "object"
+    },
+    "designerId": "077ff75c-1551-4c16-b8b1-6c179ae7abaa",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "locales",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "welcomePanel",
+                "locales": [
+                    "{",
+                    "title: 'apptitle'",
+                    "}"
+                ]
+            },
+            "name": "welcomepanel1",
+            "configAlternates": {
+                "locales": "object"
+            },
+            "designerId": "5ee58369-057d-41fb-a615-3650fa95c406",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "locales",
+                    "type": "string"
+                }
+            ],
+            "masterInstanceId": "3b942943-017e-4d4c-9ac5-8892406f33bd"
+        }
+    ]
+}

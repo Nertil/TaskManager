@@ -1,0 +1,120 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tasklist",
+        "designer|userClassName": "TaskList",
+        "store": "Tasks"
+    },
+    "designerId": "1f2aa174-7fca-4eb5-9083-a68ef92560e7",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "tpl",
+                "implHandler": [
+                    "<div>",
+                    "    <tpl if=\"completed\"><img src=\"resources/images/check.png\">",
+                    "        <span style=\"text-decoration: line-through;\">",
+                    "            {[this.getPriority(values.priority)]} - {description}",
+                    "            <tpl if=\"dueDate\"> - {dueDate:date(\"d-M-Y\")}</tpl>",
+                    "        </span>",
+                    "    <tpl else>    ",
+                    "        {[this.getPriority(values.priority)]} - {description}",
+                    "        <tpl if=\"dueDate\"> - {dueDate:date(\"d-M-Y\")}</tpl>",
+                    "        </tpl>",
+                    "</div>"
+                ]
+            },
+            "name": "tpl",
+            "designerId": "b0251509-2f65-49fa-9148-a6360bc05749",
+            "cn": [
+                {
+                    "type": "templatefunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "p"
+                        ],
+                        "fn": "getPriority",
+                        "implHandler": [
+                            "var retval = '';",
+                            "switch(p){",
+                            "    case '1': retval = '<span style=\"color:green;font-weight:bold\">' + Ux.locale.Manager.get(\"panels.task.priorities.low\") + '</span>'; break;",
+                            "    case '2': retval = '<span style=\"color:#DCDC00;font-weight:bold\">' + Ux.locale.Manager.get(\"panels.task.priorities.normal\") + '</span>'; break;",
+                            "    case '3': retval = '<span style=\"color:red;font-weight:bold\">' + Ux.locale.Manager.get(\"panels.task.priorities.high\") + '</span>'; break;",
+                            "}",
+                            "return retval;"
+                        ]
+                    },
+                    "name": "getPriority",
+                    "designerId": "550ebd9e-5a5d-4edd-b78d-8988e3de7145"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "docked": "bottom"
+            },
+            "name": "MyToolbar2",
+            "designerId": "0d7c9d6b-4a79-4539-b477-5e7f796b4c06",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": null,
+                        "iconCls": "add",
+                        "itemId": "addButton",
+                        "layout|flex": 1,
+                        "locales": [
+                            "{",
+                            "text: 'buttons.new'",
+                            "}"
+                        ],
+                        "maxWidth": 150,
+                        "text": "New",
+                        "width": null
+                    },
+                    "name": "MyButton",
+                    "configAlternates": {
+                        "locales": "object"
+                    },
+                    "designerId": "0b1694f4-4b41-4f37-9f33-c3e9df00f902",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "locales",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

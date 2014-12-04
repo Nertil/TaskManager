@@ -1,0 +1,261 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Tasks"
+    },
+    "designerId": "2733923a-f012-4fc8-8e51-034b2e4115e3",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "tasknavview #addButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "add",
+                "implHandler": [
+                    "this.getTaskNavView().push({",
+                    "    xtype: 'taskpanel',",
+                    "    locales:{",
+                    "        title: 'panels.task.titles.new'",
+                    "    }",
+                    "});",
+                    "",
+                    "this.getDeleteButton().hide();"
+                ],
+                "name": "tap"
+            },
+            "name": "add",
+            "designerId": "4f84813c-6e46-4fe3-b20d-94176fe522ca"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "tasklist",
+                "designer|targetType": "TaskList",
+                "fn": "edit",
+                "implHandler": [
+                    "var mainView = this.getTaskNavView();",
+                    "",
+                    "mainView.push({",
+                    "    xtype: 'taskpanel',",
+                    "    locales:{",
+                    "        title: 'panels.task.titles.edit'",
+                    "    }",
+                    "});",
+                    "this.getDeleteButton().show();",
+                    "",
+                    "record.set('task_id', record.get('id'));",
+                    "var taskFormField = this.getTaskFormField(),",
+                    "    fields = taskFormField.getFieldsAsArray();",
+                    "",
+                    "Ext.each(fields, function(field) {",
+                    "    var key = field.getName(),",
+                    "        value = record.get(key);",
+                    "    field.setValue(value);",
+                    "});",
+                    "",
+                    "mainView.setRecord(record);",
+                    "",
+                    "this.holdSelect = true;"
+                ],
+                "name": "itemtap"
+            },
+            "name": "edit",
+            "designerId": "c22ef67f-57dd-4d84-be23-5cc6b3d25fad"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "taskpanel #saveButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "save",
+                "implHandler": [
+                    "var fields = this.getTaskFormField().getFieldsAsArray(),",
+                    "    data = {};",
+                    "",
+                    "var mainView = this.getTaskNavView(),",
+                    "    record = mainView.getRecord(),",
+                    "    store = mainView.down('tasklist').getStore();",
+                    "Ext.each(fields, function (field) {",
+                    "    var key = field.getName(),",
+                    "        value = field.getValue();",
+                    "    data[key] = value;",
+                    "});",
+                    "var model = Ext.create('TaskManager.model.Task', data);",
+                    "model.set('userId', TaskManager.user.getData());",
+                    "model.set('id', data['task_id']);",
+                    "model.save({",
+                    "    success: function (task) {",
+                    "        if(task){",
+                    "            if (record) {",
+                    "                record.set(task.getData());",
+                    "                mainView.setRecord(null);",
+                    "            } else {",
+                    "                store.add(task);",
+                    "            }",
+                    "            store.sort();",
+                    "",
+                    "            // Navigate back to list",
+                    "            mainView.pop();",
+                    "        }",
+                    "    },",
+                    "    failure: function () {",
+                    "        console.log('Salvatagio falito');",
+                    "    }",
+                    "});",
+                    "",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "name": "save",
+            "designerId": "5878c17a-f4d1-41df-9b54-9bb9f34dfdd1"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "taskNavView",
+                "selector": "tasknavview"
+            },
+            "name": "taskNavView",
+            "designerId": "359761db-20d2-41e7-b6fe-c0629136513f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "taskFormField",
+                "selector": "taskpanel #taskFormField"
+            },
+            "name": "taskFormField",
+            "designerId": "0771fd20-d311-4473-83d0-c276d7e06ff6"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "deleteButton",
+                "selector": "taskpanel #deleteButton"
+            },
+            "name": "deleteButton",
+            "designerId": "56a96f95-7521-4681-a72d-c8763e227ef6"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "taskpanel #deleteButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "remove",
+                "implHandler": [
+                    "var me = this,",
+                    "    title = Ux.locale.Manager.get('messages.attention'),",
+                    "    message = Ux.locale.Manager.get('messages.deletion_confirm'),",
+                    "    yes = Ux.locale.Manager.get('buttons.yes');",
+                    "",
+                    "",
+                    "Ext.Msg.confirm(title, message, function(response) {",
+                    "    if (response === yes) {",
+                    "",
+                    "\t\tvar mainView = me.getTaskNavView(),",
+                    "\t\ttasks = mainView.down('tasklist').getStore(),",
+                    "\t\ttask = mainView.getRecord();",
+                    "        mainView.mask();",
+                    "        task.erase({",
+                    "            success: function() {",
+                    "                mainView.unmask();",
+                    "                tasks.remove(task);",
+                    "                mainView.pop();",
+                    "            },",
+                    "            failure: function() {",
+                    "                mainView.unmask();",
+                    "                Ext.Msg.alert(\"Failure\",\"Some error occors loading tasks\", Ext.emptyFn);",
+                    "            }",
+                    "        });",
+                    "",
+                    "    }",
+                    "});"
+                ],
+                "name": "tap"
+            },
+            "name": "remove",
+            "designerId": "2b137530-1622-48a6-bbbd-1c489f42864e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "tasklist",
+                "designer|targetType": "TaskList",
+                "fn": "onTaskListInitialize",
+                "implHandler": [
+                    "var me = this, mainView = me.getTaskNavView();",
+                    "var taskStore = component.getStore();",
+                    "mainView.mask();",
+                    "var store = Ext.create('TaskManager.store.Tasks', {",
+                    "    proxy: {",
+                    "        type: 'rest',",
+                    "        //we want to load only the tasks of current user",
+                    "        url : TaskManager.restUrl + 'task?user_id=' + TaskManager.user.get('id')",
+                    "    }",
+                    "});",
+                    "store.load({",
+                    "    callback: function(records, operation, success) {",
+                    "        mainView.unmask();",
+                    "        if(success){",
+                    "            taskStore.setData(records);",
+                    "        }",
+                    "        else{",
+                    "            Ext.Msg.alert(\"Failure\",\"Some error occors loading tasks\", Ext.emptyFn);",
+                    "        }",
+                    "    },",
+                    "    scope: this",
+                    "});"
+                ],
+                "name": "initialize"
+            },
+            "name": "onTaskListInitialize",
+            "designerId": "a3ff0034-387f-4b43-b16d-a1f463eb2c8d"
+        }
+    ]
+}

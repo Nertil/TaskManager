@@ -1,0 +1,130 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "Tasks",
+            "Account"
+        ],
+        "models": [
+            "Task",
+            "User"
+        ],
+        "name": "TaskManager",
+        "requires": [
+            "Ext.MessageBox",
+            "Ux.locale.override.st.field.Field",
+            "Ux.locale.override.st.form.FieldSet",
+            "Ux.locale.override.st.navigation.Bar",
+            "Ux.locale.override.st.navigation.View",
+            "Ux.locale.override.st.picker.Picker",
+            "Ux.locale.override.st.Button",
+            "Ux.locale.override.st.Component",
+            "Ux.locale.override.st.Container",
+            "Ux.locale.override.st.DataView",
+            "Ux.locale.override.st.LoadMask",
+            "Ux.locale.override.st.TitleBar",
+            "Ux.locale.Manager",
+            "Ux.locale.override.st.field.DatePicker",
+            "Ux.locale.override.st.picker.Date"
+        ],
+        "stores": [
+            "Tasks"
+        ],
+        "views": [
+            "LoginNavView",
+            "TaskList",
+            "TaskPanel",
+            "WelcomePanel",
+            "RegisterPanel",
+            "LoginPanel",
+            "MessageLabel",
+            "TaskNavView"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "Ext.Loader",
+            "reference": {
+                "name": "loader",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "disableCaching": false,
+                "paths": [
+                    "{",
+                    "\"Ux\": \"app/Ux\"",
+                    "}"
+                ]
+            },
+            "name": "Loader81",
+            "designerId": "a3ca652d-b22f-4c69-95ec-b5927ffcf339"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "//save the server url where to find REST webservice",
+                    "TaskManager.restUrl = 'http://178.239.178.23/task_manager/rest/';",
+                    "Ux.locale.Manager.setConfig({",
+                    "    ajaxConfig: {",
+                    "        method: 'GET'",
+                    "    },",
+                    "    language: navigator.language? navigator.language.split('-')[0] : navigator.userLanguage.split('-')[0],",
+                    "    tpl: 'app/locales/{locale}.json',",
+                    "    //language: 'id',",
+                    "    //tpl: 'app/locales/it.json',",
+                    "    type: 'ajax'",
+                    "});",
+                    "Ux.locale.Manager.init(this.localesReady);"
+                ]
+            },
+            "name": "launch",
+            "designerId": "92e6d02e-aa47-49ee-8f1d-c45beb3c9477"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "localesReady",
+                "implHandler": [
+                    "Ext.create('TaskManager.view.LoginNavView', {fullscreen: true});",
+                    "if (Ux.locale.Manager.isLoaded()) {",
+                    "    var B = Ext.MessageBox;",
+                    "    Ext.apply(B, {",
+                    "        OK: {text: Ux.locale.Manager.get(\"buttons.ok\")},",
+                    "        CANCEL: {text: Ux.locale.Manager.get(\"buttons.cancel\")},",
+                    "        YES: {text: Ux.locale.Manager.get(\"buttons.yes\")},",
+                    "        NO: {text: Ux.locale.Manager.get(\"buttons.no\")}",
+                    "    });",
+                    "    Ext.apply(B, {",
+                    "        OKCANCEL: [B.CANCEL, B.OK],",
+                    "        YESNOCANCEL: [B.CANCEL, B.NO, B.YES],",
+                    "        YESNO: [B.NO, B.YES]",
+                    "        // Add additional button collections here",
+                    "    });",
+                    "}"
+                ]
+            },
+            "name": "localesReady",
+            "designerId": "d2306204-d477-4f82-bd41-d11a50bed556"
+        }
+    ]
+}

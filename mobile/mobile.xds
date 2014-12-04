@@ -1,0 +1,74 @@
+{
+    "name": "mobile",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "5.0.3.324",
+            "frameworkVersion": "2.4.0.482"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "urlPrefix": "http://localhost:1841",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": false,
+        "projectHasEnabledWebServer": true,
+        "lastBuildSelection": {
+            "value": "emulate",
+            "display": "Native Build & Emulate"
+        },
+        "lockUrlPrefix": true,
+        "installStatus": "Not Installed"
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 1943,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000007,
+    "framework": "touch24",
+    "viewOrderMap": {
+        "view": [
+            "077ff75c-1551-4c16-b8b1-6c179ae7abaa",
+            "e770d5c9-9dda-4cbb-9da3-76c2e4939b76",
+            "1f2aa174-7fca-4eb5-9083-a68ef92560e7",
+            "dc9a4e43-ca0f-4e76-b9bf-ccb94c325c5d",
+            "3b942943-017e-4d4c-9ac5-8892406f33bd",
+            "3cd634aa-9357-4e6d-9e1e-8eb9bea3bdbc",
+            "b93d160b-e813-4c72-b2af-14636330f4b7",
+            "20404043-3d48-48f1-9a7c-3da2216e3a1c"
+        ],
+        "store": [
+            "36a9fdfe-c40c-4ed6-8fd8-c9180e7d31a7"
+        ],
+        "controller": [
+            "2733923a-f012-4fc8-8e51-034b2e4115e3",
+            "064cb908-be64-4098-bb33-4ba01d20083b"
+        ],
+        "model": [
+            "123a2aab-3e92-4e3a-975a-6d4e8566a2cc",
+            "ced6bbe8-47d7-497b-b8c4-ca721d0cdcbb"
+        ],
+        "resource": [
+            "3d6a791c-08b6-448c-8d83-5c9b12d5cfd9",
+            "45ee8ca2-bec4-4d0b-a97c-1cd3943ab829",
+            "f0d582ad-3923-4410-865f-ad92a35b696e",
+            "e1fb107f-db01-45ff-9bc7-5537187a2912",
+            "ac0764e1-4ade-4c7a-aca6-29341932855d",
+            "55111048-c8f2-42ab-88ab-3bc581de0063"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

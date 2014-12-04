@@ -1,0 +1,269 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Account"
+    },
+    "name": "MyController",
+    "designerId": "064cb908-be64-4098-bb33-4ba01d20083b",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "loginNavView",
+                "selector": "loginnavview"
+            },
+            "name": "loginNavView",
+            "designerId": "a35f860b-3a72-4104-9605-83dbb604d87c"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "registerForm",
+                "selector": "registerform"
+            },
+            "name": "registerForm",
+            "designerId": "2cd6690d-c873-46e1-8fa1-e77fec08f4cb"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#showLoginButton",
+                "designer|targetType": "MyButton",
+                "fn": "onShowLoginButtonTap",
+                "implHandler": [
+                    "this.getLoginNavView().push({",
+                    "    xtype: \"loginform\",",
+                    "    locales:{",
+                    "        title: 'panels.login.title'",
+                    "    },",
+                    "    title: \"Login\"",
+                    "});"
+                ],
+                "name": "tap"
+            },
+            "name": "onShowLoginButtonTap",
+            "designerId": "0c8118e5-8d09-46c2-8e7e-25223bab3742"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#showRegisterButton",
+                "designer|targetType": "MyButton1",
+                "fn": "onShowRegisterButtonTap",
+                "implHandler": [
+                    "this.getLoginNavView().push({",
+                    "    xtype: \"registerform\",",
+                    "    locales:{",
+                    "        title: 'panels.register.title'",
+                    "    },",
+                    "    title: \"Registration\"",
+                    "});"
+                ],
+                "name": "tap"
+            },
+            "name": "onShowRegisterButtonTap",
+            "designerId": "a3cf9b6e-5c45-41a9-9826-07071f199ebe"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "segmentedbutton#mysegmentedbutton",
+                "designer|params": [
+                    "container, button, pressed"
+                ],
+                "designer|targetType": "MySegmentedButton",
+                "fn": "onLanguageToggle",
+                "implHandler": [
+                    "if(pressed){",
+                    "    var lang = 'it';",
+                    "    switch(button.getItemId()){",
+                    "        case 'b_al':",
+                    "            lang='al';",
+                    "            break;",
+                    "        case 'b_en':",
+                    "            lang='en';",
+                    "            break;",
+                    "        case 'b_it':",
+                    "            lang='it';",
+                    "            break;",
+                    "    }",
+                    "    Ux.locale.Manager.updateLocale(lang);",
+                    "}"
+                ],
+                "name": "toggle"
+            },
+            "name": "onLanguageToggle",
+            "designerId": "93e1fb8c-ff43-4db3-bfed-c98d40b4f787"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#loginButton",
+                "designer|params": [
+                    "button, e, eOpts"
+                ],
+                "designer|targetType": "MyButton2",
+                "fn": "onLoginButtonTap",
+                "implHandler": [
+                    "var form = button.up('formpanel'),",
+                    "    values = form.getValues(),",
+                    "    me = this;",
+                    "",
+                    "//success",
+                    "var successCallback = function (resp, ops) {",
+                    "    form.unmask();",
+                    "    var login = Ext.decode(resp.responseText);",
+                    "    if (login) {",
+                    "        TaskManager.user = Ext.create('TaskManager.model.User', login);",
+                    "        me.loginSuccess();",
+                    "    }else{",
+                    "        var errorLabel = form.down('#messageLabel');",
+                    "        errorLabel.setHidden(false);",
+                    "    }",
+                    "};",
+                    "",
+                    "// Failure",
+                    "var failureCallback = function (resp, ops) {",
+                    "    form.unmask();",
+                    "    Ext.Msg.alert(\"Login Failure\", resp, Ext.emptyFn);",
+                    "};",
+                    "",
+                    "Ext.Ajax.request({",
+                    "    url: TaskManager.restUrl + 'user/login/',",
+                    "    method: 'GET',",
+                    "    params: {",
+                    "        username : values.username,",
+                    "        password : values.password",
+                    "    },",
+                    "    success: successCallback,",
+                    "    failure: failureCallback",
+                    "});",
+                    "form.mask();"
+                ],
+                "name": "tap"
+            },
+            "name": "onLoginButtonTap",
+            "designerId": "a334904e-2e18-4c61-bee8-05d19a3c4fdc"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "loginSuccess",
+                "implHandler": [
+                    "var taskNavView = Ext.create('TaskManager.view.TaskNavView');",
+                    "Ext.Viewport.add(taskNavView);",
+                    "Ext.Viewport.animateActiveItem(taskNavView, {",
+                    "        type: 'slide',",
+                    "        direction: 'left'",
+                    "    });"
+                ]
+            },
+            "name": "loginSuccess",
+            "designerId": "704d95c0-06cc-44d8-888f-50a33273d4ba"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#registerButton",
+                "designer|targetType": "MyButton3",
+                "fn": "onRegisterButtonTap",
+                "name": "tap"
+            },
+            "name": "onRegisterButtonTap",
+            "designerId": "5b8a56c4-19f4-4c09-ab4d-38ddaf88d434"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#doRegistrationButton",
+                "designer|targetType": "MyButton3",
+                "fn": "onDoRegistrationButtonTap",
+                "implHandler": [
+                    "var me = this,",
+                    "    data = this.getRegisterForm().getValues();",
+                    "",
+                    "var model = Ext.create('TaskManager.model.User', data);",
+                    "model.set('id', null);",
+                    "var errors = model.validate(), message = \"\";",
+                    "if (errors.isValid()) {",
+                    "    model.save({",
+                    "        success: function (record) {",
+                    "            //if reccord null there is already a user with this username in the database",
+                    "            if(record && record.get('id')){",
+                    "                TaskManager.user = record;",
+                    "                me.loginSuccess();",
+                    "            }",
+                    "            else{",
+                    "                Ext.Msg.alert(Ux.locale.Manager.get(\"messages.attention\"), Ux.locale.Manager.get(\"messages.user_exist\"), Ext.emptyFn);",
+                    "            }",
+                    "        },",
+                    "        failure: function () {",
+                    "            console.log('Salvatagio falito');",
+                    "        }",
+                    "    });",
+                    "}",
+                    "else {",
+                    "    Ext.each(errors.items, function(r, i) {",
+                    "        message += r.config.field + ' ' + r.config.message + \"<br />\";",
+                    "    });",
+                    "    Ext.Msg.alert(Ux.locale.Manager.get(\"messages.attention\"), message, Ext.emptyFn);",
+                    "}",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "name": "onDoRegistrationButtonTap",
+            "designerId": "39555e00-93dd-4bf3-81bc-e5fcdae281e2"
+        }
+    ]
+}

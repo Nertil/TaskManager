@@ -1,0 +1,307 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "center",
+        "container|pack": "center",
+        "designer|userAlias": "welcomepanel",
+        "designer|userClassName": "WelcomePanel",
+        "docked": null,
+        "hidden": false,
+        "itemId": "welcomePanel1",
+        "layout": "vbox",
+        "scrollable": null
+    },
+    "name": "MyContainer1",
+    "designerId": "3b942943-017e-4d4c-9ac5-8892406f33bd",
+    "cn": [
+        {
+            "type": "Ext.Spacer",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MySpacer",
+            "designerId": "3ef32a7c-7912-47d1-a308-4b297959f702"
+        },
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "info-label"
+                ],
+                "docked": null,
+                "html": "Welcome in task manager.",
+                "layout|flex": null,
+                "locales": [
+                    "{",
+                    "html: 'panels.welcome.welcome_label'",
+                    "}"
+                ],
+                "margin": null,
+                "style": null,
+                "width": ""
+            },
+            "name": "MyLabel1",
+            "configAlternates": {
+                "locales": "object"
+            },
+            "designerId": "0000d3d6-1180-4c1d-ac54-b2171479c549",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "locales",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Spacer",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MySpacer2",
+            "designerId": "276eb752-8704-45d2-91fd-30c53d09fcdc"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|uiInterfaceName": "action",
+                "iconCls": "fa-lock",
+                "itemId": "showLoginButton",
+                "layout|flex": 0,
+                "locales": [
+                    "{",
+                    "text: 'panels.welcome.login'",
+                    "}"
+                ],
+                "margin": 20,
+                "padding": 8,
+                "text": "Login",
+                "ui": "action",
+                "width": 200
+            },
+            "name": "MyButton",
+            "configAlternates": {
+                "locales": "object"
+            },
+            "designerId": "fe5ef648-87ef-4e9c-8879-09e335ff8293",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "locales",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconAlign": null,
+                "iconCls": "compose",
+                "itemId": "showRegisterButton",
+                "locales": [
+                    "{",
+                    "text: 'panels.welcome.register'",
+                    "}"
+                ],
+                "margin": 20,
+                "padding": 8,
+                "text": "Registrati",
+                "width": 200
+            },
+            "name": "MyButton1",
+            "configAlternates": {
+                "locales": "object"
+            },
+            "designerId": "8b5714fc-b4f4-46d9-805b-bf2847152385",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "locales",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.SegmentedButton",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "defaults": [
+                    "{",
+                    "width: 100",
+                    "}"
+                ],
+                "docked": null,
+                "itemId": "mysegmentedbutton",
+                "layout|flex": 1,
+                "ui": null
+            },
+            "name": "MySegmentedButton",
+            "designerId": "948c15b1-6a0b-4f7d-b4c6-cb7580ebc05e",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "resources/flags/al.png",
+                        "iconAlign": "top",
+                        "iconCls": null,
+                        "itemId": "b_al",
+                        "locales": [
+                            "{",
+                            "text: 'languages.al'",
+                            "}"
+                        ],
+                        "text": "Albanian",
+                        "ui": null
+                    },
+                    "name": "MyButton5",
+                    "configAlternates": {
+                        "locales": "object"
+                    },
+                    "designerId": "231119f9-a23b-4bd4-9df0-8168b904e565",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "locales",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "resources/flags/en.png",
+                        "iconAlign": "top",
+                        "iconCls": null,
+                        "itemId": "b_en",
+                        "locales": [
+                            "{",
+                            "text: 'languages.en'",
+                            "}"
+                        ],
+                        "text": "English"
+                    },
+                    "name": "MyButton6",
+                    "configAlternates": {
+                        "locales": "object"
+                    },
+                    "designerId": "1db472e4-5147-45ab-a264-296d7b5e145e",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "locales",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "resources/flags/it.png",
+                        "iconAlign": "top",
+                        "iconCls": null,
+                        "itemId": "b_it",
+                        "locales": [
+                            "{",
+                            "text: 'languages.it'",
+                            "}"
+                        ],
+                        "pressed": null,
+                        "text": "Italian"
+                    },
+                    "name": "MyButton7",
+                    "configAlternates": {
+                        "locales": "object",
+                        "pressed": "boolean"
+                    },
+                    "designerId": "cdb0360b-e1c1-465f-b851-7021cd88cc31",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "locales",
+                            "type": "string"
+                        },
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "pressed",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "delay": 100,
+                        "fn": "onMysegmentedbuttonInitialize",
+                        "implHandler": [
+                            "var b = component.down('#b_' + Ux.locale.Manager.getLanguage());",
+                            "component.setPressedButtons([b]);"
+                        ],
+                        "name": "initialize"
+                    },
+                    "name": "onMysegmentedbuttonInitialize",
+                    "designerId": "74a86ba6-963e-4902-b720-ea2063d4bea4"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Spacer",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MySpacer1",
+            "designerId": "31d07990-77f2-46c9-b8c8-f5fa3527b581"
+        }
+    ]
+}

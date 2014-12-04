@@ -1,0 +1,252 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "registerform",
+        "designer|userClassName": "RegisterPanel"
+    },
+    "name": "RegisterPanel",
+    "designerId": "3cd634aa-9357-4e6d-9e1e-8eb9bea3bdbc",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "locales": [
+                    "{",
+                    "instructions: 'panels.fieldset_istruction'",
+                    "}"
+                ],
+                "title": null
+            },
+            "name": "MyFieldSet1",
+            "configAlternates": {
+                "locales": "object"
+            },
+            "designerId": "48634a4c-57dd-4941-89b9-596fcf8c03c4",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "locales",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Name",
+                        "labelWidth": "40%",
+                        "locales": [
+                            "{",
+                            "label: 'panels.register.name'",
+                            "}"
+                        ],
+                        "name": "name",
+                        "required": true
+                    },
+                    "name": "MyTextField2",
+                    "configAlternates": {
+                        "locales": "object"
+                    },
+                    "designerId": "d1249297-776d-409f-bf91-e85af6c14f1a",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "locales",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Username",
+                        "labelWidth": "40%",
+                        "locales": [
+                            "{",
+                            "label: 'panels.register.username'",
+                            "}"
+                        ],
+                        "name": "username",
+                        "required": true
+                    },
+                    "name": "MyTextField3",
+                    "configAlternates": {
+                        "locales": "object"
+                    },
+                    "designerId": "6f82ab81-7c2f-4356-96f2-f55c6dbdbd50",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "locales",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Email",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Email",
+                        "labelWidth": "40%",
+                        "locales": [
+                            "{",
+                            "label: 'panels.register.email'",
+                            "}"
+                        ],
+                        "name": "email",
+                        "placeHolder": "email@example.com",
+                        "required": true
+                    },
+                    "name": "MyEmailField",
+                    "configAlternates": {
+                        "locales": "object"
+                    },
+                    "designerId": "5dca3864-f723-43c3-a290-5ef876210f65",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "locales",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Password",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Password",
+                        "labelWidth": "40%",
+                        "locales": [
+                            "{",
+                            "label: 'panels.register.password'",
+                            "}"
+                        ],
+                        "name": "password"
+                    },
+                    "name": "MyPasswordField",
+                    "configAlternates": {
+                        "locales": "object"
+                    },
+                    "designerId": "70d87325-94f6-48e1-9d71-c906f72aefa0",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "locales",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "hidden": true,
+                "locales": [
+                    "{",
+                    "html: 'panels.register.error_label'",
+                    "}"
+                ]
+            },
+            "name": "messagelabel2",
+            "configAlternates": {
+                "locales": "object"
+            },
+            "designerId": "12ed6166-fbf5-45b0-906e-c0f56f796d09",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "locales",
+                    "type": "string"
+                }
+            ],
+            "masterInstanceId": "20404043-3d48-48f1-9a7c-3da2216e3a1c"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "docked": "bottom"
+            },
+            "name": "MyToolbar1",
+            "designerId": "08d44e33-5b5f-437b-ae40-eb4b3ac3feac",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "confirm",
+                        "iconCls": "compose",
+                        "itemId": "doRegistrationButton",
+                        "layout|flex": 1,
+                        "locales": [
+                            "{",
+                            "text: 'panels.register.b_register'",
+                            "}"
+                        ],
+                        "margin": null,
+                        "maxWidth": 150,
+                        "padding": null,
+                        "text": "Register",
+                        "ui": "confirm"
+                    },
+                    "name": "MyButton3",
+                    "configAlternates": {
+                        "locales": "object"
+                    },
+                    "designerId": "097d869e-d08e-47cd-a096-9575e82bae13",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "locales",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

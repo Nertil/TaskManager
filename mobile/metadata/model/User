@@ -1,0 +1,180 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "user",
+        "designer|userClassName": "User"
+    },
+    "designerId": "ced6bbe8-47d7-497b-b8c4-ca721d0cdcbb",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "email",
+                "type": "string"
+            },
+            "name": "field4",
+            "designerId": "2ebcf42c-a540-4b34-beb8-27282848a16d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "int"
+            },
+            "name": "field5",
+            "designerId": "8089a5f8-4458-4f6a-9e6a-70f7d9686589"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "type": "string"
+            },
+            "name": "field6",
+            "designerId": "3d4fb5ed-09f7-4a79-99ae-85be87867961"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "password",
+                "type": "string"
+            },
+            "name": "field7",
+            "designerId": "47621a24-57d7-4a24-b739-bf7f67126be3"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "username",
+                "type": "string"
+            },
+            "name": "field8",
+            "designerId": "ba1f806b-6531-4632-b4a2-c77b5e32dc24"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "field": "email"
+            },
+            "name": "MyPresenceValidation",
+            "designerId": "f709a4b1-9444-40a5-b091-629878e7f700"
+        },
+        {
+            "type": "emailvalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "field": "email"
+            },
+            "name": "MyEmailValidation",
+            "designerId": "3ef08791-33df-455b-8f82-47a01cddc1dc"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "field": "name"
+            },
+            "name": "MyPresenceValidation2",
+            "designerId": "6e00e6ae-a3fc-4e76-a885-e7631d8cd2dd"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "field": "password"
+            },
+            "name": "MyPresenceValidation3",
+            "designerId": "2d2b413a-c48a-4c97-8559-63c302755a76"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "field": "username"
+            },
+            "name": "MyPresenceValidation4",
+            "designerId": "8889cd75-b9ec-4e8a-a101-8b9a9fc2f49f"
+        },
+        {
+            "type": "Ext.data.proxy.Rest",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "user"
+            },
+            "name": "MyRestProxy1",
+            "designerId": "457fc6db-e147-462a-a96e-95ed3689a328"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "constructor",
+                "implHandler": [
+                    "this.callParent(arguments);",
+                    "this.getProxy().setUrl(TaskManager.restUrl + 'user');"
+                ]
+            },
+            "name": "constructor",
+            "designerId": "8ca777d7-405f-4e1d-82b1-a18d1aa4f180"
+        }
+    ]
+}

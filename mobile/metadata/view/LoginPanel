@@ -1,0 +1,211 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "loginform",
+        "designer|userClassName": "LoginPanel",
+        "layout": "vbox"
+    },
+    "name": "LoginPanel",
+    "designerId": "b93d160b-e813-4c72-b2af-14636330f4b7",
+    "cn": [
+        {
+            "type": "Ext.Spacer",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MySpacer3",
+            "designerId": "43cc5a05-8bf0-4b73-be87-31395e0598f3"
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "locales": [
+                    "{",
+                    "instructions: 'panels.fieldset_istruction'",
+                    "}"
+                ],
+                "title": null
+            },
+            "name": "MyFieldSet",
+            "configAlternates": {
+                "locales": "object"
+            },
+            "designerId": "1f4a0591-c0ac-4765-9679-15beecae4bff",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "locales",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Username",
+                        "labelWidth": "40%",
+                        "locales": [
+                            "{",
+                            "label: 'panels.login.username'",
+                            "}"
+                        ],
+                        "name": "username",
+                        "required": true
+                    },
+                    "name": "MyTextField",
+                    "configAlternates": {
+                        "locales": "object"
+                    },
+                    "designerId": "c11ffacd-9ac2-4552-a213-9ede68932c5e",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "locales",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Password",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Password",
+                        "labelWidth": "40%",
+                        "locales": [
+                            "{",
+                            "label: 'panels.login.password'",
+                            "}"
+                        ],
+                        "name": "password",
+                        "required": true
+                    },
+                    "name": "MyPasswordField1",
+                    "configAlternates": {
+                        "locales": "object"
+                    },
+                    "designerId": "afe5481d-3187-4997-8af7-bc4c39d174d8",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "locales",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "hidden": true,
+                "locales": [
+                    "{",
+                    "html: 'panels.login.error_label'",
+                    "}"
+                ]
+            },
+            "name": "messagelabel1",
+            "configAlternates": {
+                "locales": "object"
+            },
+            "designerId": "a86d504f-3f23-4ddf-bc1b-7a0418fa3938",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "locales",
+                    "type": "string"
+                }
+            ],
+            "masterInstanceId": "20404043-3d48-48f1-9a7c-3da2216e3a1c"
+        },
+        {
+            "type": "Ext.Spacer",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MySpacer4",
+            "designerId": "e0329e98-565f-4211-8fa7-67710351074f"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "docked": "bottom"
+            },
+            "name": "MyToolbar3",
+            "designerId": "d86500a7-e58c-4ee5-9b90-3d0ad39a931d",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "confirm",
+                        "iconCls": "fa-lock",
+                        "itemId": "loginButton",
+                        "layout|flex": 1,
+                        "locales": [
+                            "{",
+                            "text: 'panels.login.b_login'",
+                            "}"
+                        ],
+                        "margin": null,
+                        "maxWidth": 150,
+                        "padding": null,
+                        "text": "Login",
+                        "ui": "confirm"
+                    },
+                    "name": "MyButton2",
+                    "configAlternates": {
+                        "locales": "object"
+                    },
+                    "designerId": "941812b5-f062-4ab1-bf8b-93ccea9b0bf1",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "locales",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
