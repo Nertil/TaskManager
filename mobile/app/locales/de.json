@@ -1,0 +1,95 @@
+{
+    
+    "dayNames": ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
+    "monthNames": ["Januar", "Februar", "März",  "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+    "months": {
+        "1"  : "Januar",
+        "2"  : "Februar",
+        "3"  : "März",
+        "4"  : "April",
+        "5"  : "Mai",
+        "6"  : "Juni",
+        "7"  : "Juli",
+        "8"  : "August",
+        "9"  : "September",
+        "10" : "Oktober",
+        "11" : "November",
+        "12" : "Dezember"
+    },
+    "buttons":{
+        "save": "Speichern",
+        "back": "Zurück",
+        "done": "Fertig",        
+        "ok": "Ok",
+        "cancel": "Abbrechen",
+        "new": "Neu",
+        "edit": "Editieren",
+        "delete": "Löschen",
+        "search": "Suche...",
+        "refresh": "Aktualisieren",
+        "open": "Öffnen",
+        "exit": "Beenden",
+        "yes": "Ja",
+        "no": "Nein"
+    },
+    "defaultDateFormat": "d/m/Y",
+    "loadingText": "Lade...",
+    "emptyText": "Keine Einträge gefunden.",
+    "date":{
+        "day": "Tag",
+        "month": "Monat",
+        "year": "Jahr"
+    },
+    "languages":{
+        "al":"Albanisch",
+        "en": "Englisch",
+        "it": "Italienisch",
+        "de": "Deutsch"
+    },
+    "apptitle": "TASK MANAGER",
+    "panels":{
+        "welcome":{
+            "welcome_label": "Willkommen zu \"TASK MANAGER\". <br>Diese App ist eine Demoanwendung, die die Verbindung zu einem REST Webservice erlaubt.",
+            "login": "Login",
+            "register": "Registrierung"
+        },
+        "login":{
+            "title": "Login",
+            "b_login": "Login",
+            "username": "Benutzername",
+            "password": "Passwort",
+            "error_label": "Zugang verweigert! Die Kombination aus Benutzername und Passwort ist nicht korrekt!"
+        },
+        "register":{
+            "title": "Registrierung",
+            "b_register": "Registrieren",
+            "username": "Benutzername",
+            "password": "Passwort",                        
+            "name": "Name",
+            "email": "Email",
+            "error_label": "Die eingegebene Email-Adresse wird bereits von einem anderen Benutzer verwendet."
+        },
+        "task":{
+            "titles":{
+                "new": "Neue Aufgabe",
+                "edit": "Aufgabe editieren",
+                "tasklist": "Meine Aufgaben"
+            },
+            "description": "Beschreibung",
+            "priority": "Priorität",
+            "priorities":{
+                "low": "Niedrig",
+                "normal": "Normal",
+                "high": "Hoch"
+            },
+            "duedate": "Fällig am",
+            "completed": "erledigt"
+        },
+        "fieldset_istruction": "* Pflichtfeld"
+    },
+    "messages":{
+        "attention": "Achtung",
+        "deletion_confirm": "Möchtest du diese Aufgabe wirklich löschen?",
+        "user_exist": "Der eingegebene Benutzername wird bereits verwendet. Bitte gib einen anderen ein."
+    }
+}
