@@ -4,7 +4,7 @@ This is a simple demo app to show communication between sencha touch and REST we
 
 AUTHOR
 ======    
-Nertil Qatipi
+[Nertil Qatipi](https://www.linkedin.com/in/nertilqatipi)
 
 LICENCE
 =======    
