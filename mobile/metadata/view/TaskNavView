@@ -45,7 +45,7 @@
                     "}"
                 ]
             },
-            "name": "tasklist1",
+            "name": "tasklist",
             "configAlternates": {
                 "locales": "object"
             },

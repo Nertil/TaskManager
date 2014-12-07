@@ -44,7 +44,7 @@
                     "}"
                 ]
             },
-            "name": "welcomepanel1",
+            "name": "welcomepanel",
             "configAlternates": {
                 "locales": "object"
             },

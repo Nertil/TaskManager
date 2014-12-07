@@ -27,6 +27,7 @@ Ext.define('TaskManager.view.WelcomePanel', {
     config: {
         hidden: false,
         itemId: 'welcomePanel1',
+        scrollable: true,
         layout: {
             type: 'vbox',
             align: 'center',
@@ -76,10 +77,10 @@ Ext.define('TaskManager.view.WelcomePanel', {
             },
             {
                 xtype: 'segmentedbutton',
-                flex: 1,
                 itemId: 'mysegmentedbutton',
+                width: '100%',
                 defaults: {
-                    width: 100
+                    
                 },
                 layout: {
                     type: 'hbox',
@@ -89,39 +90,33 @@ Ext.define('TaskManager.view.WelcomePanel', {
                 items: [
                     {
                         xtype: 'button',
-                        locales: {
-                            text: 'languages.al'
-                        },
-                        itemId: 'b_al',
+                        itemId: 'al',
                         icon: 'resources/flags/al.png',
-                        iconAlign: 'top',
-                        text: 'Albanian'
+                        iconAlign: 'top'
                     },
                     {
                         xtype: 'button',
-                        locales: {
-                            text: 'languages.en'
-                        },
-                        itemId: 'b_en',
+                        itemId: 'de',
+                        icon: 'resources/flags/de.png',
+                        iconAlign: 'top'
+                    },
+                    {
+                        xtype: 'button',
+                        itemId: 'en',
                         icon: 'resources/flags/en.png',
-                        iconAlign: 'top',
-                        text: 'English'
+                        iconAlign: 'top'
                     },
                     {
                         xtype: 'button',
-                        locales: {
-                            text: 'languages.it'
-                        },
-                        itemId: 'b_it',
+                        itemId: 'it',
                         icon: 'resources/flags/it.png',
-                        iconAlign: 'top',
-                        text: 'Italian'
+                        iconAlign: 'top'
                     }
                 ],
                 listeners: [
                     {
                         fn: function(component, eOpts) {
-                            var b = component.down('#b_' + Ux.locale.Manager.getLanguage());
+                            var b = component.down('#' + Ux.locale.Manager.getLanguage());
                             component.setPressedButtons([b]);
                         },
                         delay: 100,

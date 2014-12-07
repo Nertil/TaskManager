@@ -181,7 +181,7 @@
                     "}"
                 ]
             },
-            "name": "messagelabel2",
+            "name": "messagelabel",
             "configAlternates": {
                 "locales": "object"
             },

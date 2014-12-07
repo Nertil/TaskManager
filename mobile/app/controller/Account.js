@@ -66,18 +66,7 @@ Ext.define('TaskManager.controller.Account', {
 
     onLanguageToggle: function(container, button, pressed) {
         if(pressed){
-            var lang = 'it';
-            switch(button.getItemId()){
-                case 'b_al':
-                    lang='al';
-                    break;
-                case 'b_en':
-                    lang='en';
-                    break;
-                case 'b_it':
-                    lang='it';
-                    break;
-            }
+            var lang = button.getItemId();
             Ux.locale.Manager.updateLocale(lang);
         }
     },

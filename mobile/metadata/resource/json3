@@ -1,0 +1,14 @@
+{
+    "type": "jsonresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "json3",
+        "url": "app/locales/de.json"
+    },
+    "name": "json3",
+    "designerId": "e810954f-7a8a-4551-a4e3-11e9426f6a9d"
+}

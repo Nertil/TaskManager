@@ -26,8 +26,8 @@
         "generateArchitectVersion": false,
         "projectHasEnabledWebServer": true,
         "lastBuildSelection": {
-            "value": "emulate",
-            "display": "Native Build & Emulate"
+            "value": "nativeBuild",
+            "display": "Native Build"
         },
         "lockUrlPrefix": true,
         "installStatus": "Not Installed"
@@ -65,7 +65,8 @@
             "f0d582ad-3923-4410-865f-ad92a35b696e",
             "e1fb107f-db01-45ff-9bc7-5537187a2912",
             "ac0764e1-4ade-4c7a-aca6-29341932855d",
-            "55111048-c8f2-42ab-88ab-3bc581de0063"
+            "55111048-c8f2-42ab-88ab-3bc581de0063",
+            "e810954f-7a8a-4551-a4e3-11e9426f6a9d"
         ],
         "app": [
             "application"
