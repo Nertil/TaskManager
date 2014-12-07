@@ -24,7 +24,7 @@ MySQL Workbench: [v6.2.3](http://www.mysql.it/products/workbench/)
 
 OTHER COMPONENTS
 =================
-[Component for the localization writen by Mitchell Simoens](https://github.com/mitchellsimoens/Ux.locale.Manager)    
+[Component for the localization writed by Mitchell Simoens](https://github.com/mitchellsimoens/Ux.locale.Manager)    
 
 LIVE DEMO
 =========
