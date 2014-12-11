@@ -1,94 +1,95 @@
 {
-    
-    "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    "monthNames": ["January", "February", "March",  "April", "May", "June", "July", "August", "Settembre", "October", "November", "December"],
-    "months": {
-        "1"  : "January",
-        "2"  : "February",
-        "3"  : "March",
-        "4"  : "April",
-        "5"  : "May",
-        "6"  : "June",
-        "7"  : "July",
-        "8"  : "August",
-        "9"  : "September",
-        "10" : "October",
-        "11" : "November",
-        "12" : "December"
-    },
-    "buttons":{
-        "save": "Save",
-        "back": "Back",
-        "done": "Done",        
-        "ok": "Ok",
-        "cancel": "Cancel",
-        "new": "New",
-        "edit": "Edit",
-        "delete": "Delete",
-        "search": "Search...",
-        "refresh": "Refresh",
-        "open": "Open",
-        "exit": "Exit",
-        "yes": "Yes",
-        "no": "No"
-    },
-    "defaultDateFormat": "m/d/Y",
-    "loadingText": "Loading...",
-    "emptyText": "No items available.",
-    "date":{
-        "day": "Day",
-        "month": "Month",
-        "year": ""
-    },
-    "languages":{
-        "al":"Albanian",
-        "en": "English",
-        "it": "Italian"
-    },
-    "apptitle": "TASK MANAGER",
-    "panels":{
-        "welcome":{
-            "welcome_label": "Welcome to the \"TASK MANAGER\". <br>This app is a working demo that allows you to connect with server using REST webservice.",
-            "login": "Login",
-            "register": "Registration"
-        },
-        "login":{
-            "title": "Login",
-            "b_login": "Login",
-            "username": "Username",
-            "password": "Password",
-            "error_label": "Access denied! Incorrect username or password."
-        },
-        "register":{
-            "title": "Registration",
-            "b_register": "Register",
-            "username": "Username",
-            "password": "Password",                        
-            "name": "Name",
-            "email": "Email",
-            "error_label": "This email is already used by a user."
-        },
-        "task":{
-            "titles":{
-                "new": "New task",
-                "edit": "Edit task",
-                "tasklist": "My tasks"
-            },
-            "description": "Description",
-            "priority": "Priority",
-            "priorities":{
-                "low": "Low",
-                "normal": "Normal",
-                "high": "High"
-            },
-            "duedate": "Due date",
-            "completed": "completed"
-        },
-        "fieldset_istruction": "* necessary field"
-    },
-    "messages":{
-        "attention": "Attention",
-        "deletion_confirm": "Are you sure you want to delete this task?",
-        "user_exist": "There is already a user with this username in the database. Try anothe username"
-    }
+
+"dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+"monthNames": ["January", "February", "March",  "April", "May", "June", "July", "August", "Settembre", "October", "November", "December"],
+"months": {
+"1"  : "January",
+"2"  : "February",
+"3"  : "March",
+"4"  : "April",
+"5"  : "May",
+"6"  : "June",
+"7"  : "July",
+"8"  : "August",
+"9"  : "September",
+"10" : "October",
+"11" : "November",
+"12" : "December"
+},
+"buttons":{
+"save": "Save",
+"back": "Back",
+"done": "Done",        
+"ok": "Ok",
+"cancel": "Cancel",
+"new": "New",
+"edit": "Edit",
+"delete": "Delete",
+"search": "Search...",
+"refresh": "Refresh",
+"open": "Open",
+"exit": "Exit",
+"yes": "Yes",
+"no": "No"
+},
+"defaultDateFormat": "m/d/Y",
+"loadingText": "Loading...",
+"emptyText": "No items available.",
+"date":{
+"day": "Day",
+"month": "Month",
+"year": ""
+},
+"languages":{
+"al":"Albanian",
+"de": "German",
+"en": "English",
+"it": "Italian"
+},
+"apptitle": "TASK MANAGER",
+"panels":{
+"welcome":{
+"welcome_label": "Welcome to the \"TASK MANAGER\". <br>This app is a working demo that allows you to connect with server using REST webservice.",
+"login": "Login",
+"register": "Registration"
+},
+"login":{
+"title": "Login",
+"b_login": "Login",
+"username": "Username",
+"password": "Password",
+"error_label": "Access denied! Incorrect username or password."
+},
+"register":{
+"title": "Registration",
+"b_register": "Register",
+"username": "Username",
+"password": "Password",                        
+"name": "Name",
+"email": "Email",
+"error_label": "This email is already used by a user."
+},
+"task":{
+"titles":{
+"new": "New task",
+"edit": "Edit task",
+"tasklist": "My tasks"
+},
+"description": "Description",
+"priority": "Priority",
+"priorities":{
+"low": "Low",
+"normal": "Normal",
+"high": "High"
+},
+"duedate": "Due date",
+"completed": "completed"
+},
+"fieldset_istruction": "* necessary field"
+},
+"messages":{
+"attention": "Attention",
+"deletion_confirm": "Are you sure you want to delete this task?",
+"user_exist": "There is already a user with this username in the database. Try anothe username"
+}
 }

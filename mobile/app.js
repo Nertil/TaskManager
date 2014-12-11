@@ -15,7 +15,6 @@
 
 // @require @packageOverrides
 Ext.Loader.setConfig({
-    disableCaching: false,
     paths: {
         Ux: 'app/Ux'
     }

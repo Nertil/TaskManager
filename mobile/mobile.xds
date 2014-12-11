@@ -24,12 +24,12 @@
         "cacheBust": false,
         "buildShouldOverwriteIndex": true,
         "generateArchitectVersion": false,
-        "projectHasEnabledWebServer": true,
+        "projectHasEnabledWebServer": false,
         "lastBuildSelection": {
             "value": "nativeBuild",
             "display": "Native Build"
         },
-        "lockUrlPrefix": true,
+        "lockUrlPrefix": false,
         "installStatus": "Not Installed"
     },
     "xdsVersion": "3.1.0",

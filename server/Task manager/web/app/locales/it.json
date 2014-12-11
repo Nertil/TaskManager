@@ -1,111 +1,112 @@
 {
-    "dayNames": ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"],
-    "monthNames": ["Gennaio", "Febbraio", "Marzo",  "Aprile", "Maggio", "Giugnio", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
-    "months": {
-        "1"  : "Gennaio",
-        "2"  : "Febbraio",
-        "3"  : "Marzo",
-        "4"  : "Aprile",
-        "5"  : "Maggio",
-        "6"  : "Giugno",
-        "7"  : "Loglio",
-        "8"  : "Agosto",
-        "9"  : "Settembre",
-        "10" : "Ottobre",
-        "11" : "Novembre",
-        "12" : "Dicembre"
-    },
-    "monthNumbers": {
-		"Gen": 0,
-		"Feb": 1,
-		"Mar": 2,
-		"Apr": 3,
-		"Mag": 4,
-		"Giu": 5,
-		"Lug": 6,
-		"Age": 7,
-		"Set": 8,
-		"Ott": 9,
-		"Nov": 10,
-		"Dic": 11
-	},
-    "buttons":{
-        "save": "Salva",
-        "back": "Indietro",
-        "done": "Fatto",        
-        "ok": "Ok",
-        "cancel": "Annulla",
-        "new": "Nuovo",
-        "edit": "Edita",
-        "delete": "Elimina",
-        "search": "Cerca...",
-        "refresh": "Aggiorna",
-        "open": "Apri",
-        "exit": "Esci",
-        "yes": "Si",
-        "no": "No"
-    },
-    "defaultDateFormat": "d/m/Y",
-    "loadingText": "Caricamento...",
-    "emptyText": "Nessun elemento disponibile.",
-    "date":{
-        "day": "Giorno",
-        "month": "Mese",
-        "year": "Anno"
-    },
-    "languages":{
-        "al":"Albanese",
-        "en": "Inglese",
-        "it": "Italiano"
-    },
-    "apptitle": "GESTORE COMPITI",
-    "panels":{
-        "welcome":{
-            "welcome_label": "Benvenuto in \"GESTORE COMPITI\". <br>Questa app è una demo funzionante che permette di connetersi con server usando webservice REST.",
-            "login": "Login",
-            "register": "Registrati"
-        },
-        "login":{
-            "title": "Login",
-            "b_login": "Login",
-            "username": "Nome utente",
-            "password": "Password",
-            "error_label": "Accesso negato! Nome utente o password errati"
-        },
-        "register":{
-            "title": "Registrazione",
-            "b_register": "Registrati",
-            "username": "Nome utente",
-            "password": "Password",                        
-            "name": "Nome",
-            "email": "Email",
-            "error_label": "Esiste già un utente con questa email."
-        },
-        "task":{
-            "titles":{
-                "new": "Nuovo compito",
-                "edit": "Edità compito",
-                "tasklist": "I miei compiti"
-            },
-            "description": "Descrizione",
-            "priority": "Priotità",
-            "priorities":{
-                "low": "Bassa",
-                "normal": "Normale",
-                "high": "Alta"
-            },
-            "duedate": "Scadenza",
-            "completed": "Completato"
-        },
-        "fieldset_istruction": "* campo necessario"
-    },
-    "validation":{
-        "presence_pre": "Il campo ",
-        "presence_post": " è necessario"
-    },
-    "messages":{
-        "attention": "Attenzione",
-        "deletion_confirm": "Sei sicuro di voler eliminare questo compito?",
-        "user_exist": "Esiste già un utente con questo nome utente nel database. Prova un altro"
-    }
+"dayNames": ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"],
+"monthNames": ["Gennaio", "Febbraio", "Marzo",  "Aprile", "Maggio", "Giugnio", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
+"months": {
+"1"  : "Gennaio",
+"2"  : "Febbraio",
+"3"  : "Marzo",
+"4"  : "Aprile",
+"5"  : "Maggio",
+"6"  : "Giugno",
+"7"  : "Loglio",
+"8"  : "Agosto",
+"9"  : "Settembre",
+"10" : "Ottobre",
+"11" : "Novembre",
+"12" : "Dicembre"
+},
+"monthNumbers": {
+"Gen": 0,
+"Feb": 1,
+"Mar": 2,
+"Apr": 3,
+"Mag": 4,
+"Giu": 5,
+"Lug": 6,
+"Age": 7,
+"Set": 8,
+"Ott": 9,
+"Nov": 10,
+"Dic": 11
+},
+"buttons":{
+"save": "Salva",
+"back": "Indietro",
+"done": "Fatto",        
+"ok": "Ok",
+"cancel": "Annulla",
+"new": "Nuovo",
+"edit": "Edita",
+"delete": "Elimina",
+"search": "Cerca...",
+"refresh": "Aggiorna",
+"open": "Apri",
+"exit": "Esci",
+"yes": "Si",
+"no": "No"
+},
+"defaultDateFormat": "d/m/Y",
+"loadingText": "Caricamento...",
+"emptyText": "Nessun elemento disponibile.",
+"date":{
+"day": "Giorno",
+"month": "Mese",
+"year": "Anno"
+},
+"languages":{
+"al":"Albanese",
+"de": "Tedesco",
+"en": "Inglese",
+"it": "Italiano"
+},
+"apptitle": "GESTORE COMPITI",
+"panels":{
+"welcome":{
+"welcome_label": "Benvenuto in \"GESTORE COMPITI\". <br>Questa app è una demo funzionante che permette di connetersi con server usando webservice REST.",
+"login": "Login",
+"register": "Registrati"
+},
+"login":{
+"title": "Login",
+"b_login": "Login",
+"username": "Nome utente",
+"password": "Password",
+"error_label": "Accesso negato! Nome utente o password errati"
+},
+"register":{
+"title": "Registrazione",
+"b_register": "Registrati",
+"username": "Nome utente",
+"password": "Password",                        
+"name": "Nome",
+"email": "Email",
+"error_label": "Esiste già un utente con questa email."
+},
+"task":{
+"titles":{
+"new": "Nuovo compito",
+"edit": "Edità compito",
+"tasklist": "I miei compiti"
+},
+"description": "Descrizione",
+"priority": "Priotità",
+"priorities":{
+"low": "Bassa",
+"normal": "Normale",
+"high": "Alta"
+},
+"duedate": "Scadenza",
+"completed": "Completato"
+},
+"fieldset_istruction": "* campo necessario"
+},
+"validation":{
+"presence_pre": "Il campo ",
+"presence_post": " è necessario"
+},
+"messages":{
+"attention": "Attenzione",
+"deletion_confirm": "Sei sicuro di voler eliminare questo compito?",
+"user_exist": "Esiste già un utente con questo nome utente nel database. Prova un altro"
+}
 }

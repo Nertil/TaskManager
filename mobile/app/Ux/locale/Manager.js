@@ -19,7 +19,8 @@ Ext.define('Ux.locale.Manager', {
     _locales    : [
         { abbr : 'en', text : 'English' },
         { abbr : 'al', text : 'Albanian'  },
-        { abbr : 'it', text : 'Italian'  }
+        { abbr : 'it', text : 'Italian'  },
+        { abbr : 'de', text : 'German'  }
     ],
     _tpl        : '',
     _type       : 'script',
@@ -56,6 +57,16 @@ Ext.define('Ux.locale.Manager', {
 
         me._beforeLoad();
 
+        var isLanguageSupported = false;
+        var index;
+		for (index = 0; index < me._locales.length; ++index) {
+			if(me._locales[index].abbr === me._language){
+				isLanguageSupported = true;
+			}
+		}
+    	if(!isLanguageSupported){
+    		me._language = 'en'
+    	}
         var ajaxConfig = Ext.apply({}, me._ajaxConfig),
             language   = me._language,
             path       = me._tpl.replace('{locale}', language),
