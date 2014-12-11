@@ -4,7 +4,7 @@ This is a simple demo app to show communication between sencha touch and REST we
 
 AUTHOR
 ======    
-Nertil Qatipi
+[Nertil Qatipi](https://www.linkedin.com/in/nertilqatipi)
 
 LICENCE
 =======    
@@ -24,7 +24,7 @@ MySQL Workbench: [v6.2.3](http://www.mysql.it/products/workbench/)
 
 OTHER COMPONENTS
 =================
-[Component for the localization writen by Mitchell Simoens](https://github.com/mitchellsimoens/Ux.locale.Manager)    
+[Component for the localization writed by Mitchell Simoens](https://github.com/mitchellsimoens/Ux.locale.Manager)    
 
 LIVE DEMO
 =========
